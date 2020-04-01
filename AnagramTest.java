@@ -6,26 +6,26 @@ public class AnagramTest {
 		StringBuilder rightString = new StringBuilder( str2.trim().toLowerCase());
 		
 		if(leftString.length() != rightString.length()){
-				return false;
-			}
-			int l = leftString.length();
-			int k = rightString.length();
-			for(int i = 0; i < l < i++){
-				for(int j = o; j < k ; j{
-					if(leftString.charAt(i) == rightString.charAt(j)){
-						leftString.deleteCharAt(i);
-						rightString.deleteCharAt(j);
-						//Leaving the inner loop to avoid deleting twice
-						break; 
-					}
+		        return false;
+		}
+		int l = leftString.length();
+		int k = rightString.length();
+		for(int i = 0; i < l < i++){
+			for(int j = o; j < k ; j{
+				if(leftString.charAt(i) == rightString.charAt(j)){
+					leftString.deleteCharAt(i);
+					rightString.deleteCharAt(j);
+					//Leaving the inner loop to avoid deleting twice
+					break; 
 				}
 			}
-			//Testing if both strings have zero character
-			if(leftString.length() == 0) && (rightString.length()==0){
-				return true;
-			}else {
-				return false;
-			}
+		}
+		//Testing if both strings have zero character
+		if(leftString.length() == 0) && (rightString.length()==0){
+			return true;
+		}else {
+			return false;
+		}
 	}
 				    
 	public static void main(String [] args)	{
