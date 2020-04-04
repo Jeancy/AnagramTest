@@ -33,10 +33,20 @@ public class AnagramTest {
 	}
 				    
 	public static void main(String [] args)	{
+            //Test cases;
             String a = "integral"; // initializing first string
             String b = "Triangle"; // initializing second string
-            System.out.println(isAnagram(a,b));
-                        
+            System.out.println("The statement "+ a + " is anagram of "+b+" is "+isAnagram(a,b));// Print true
+            
+            String c = "silent"; // initializing first string
+            String d = "listen"; // initializing second string
+            System.out.println("The statement "+ c + " is anagram of "+d+" is "+isAnagram(c,d));// Print true
+            
+            String e = "fried"; // initializing first string
+            String f = "fired"; // initializing second string
+            System.out.println("The statement "+ e + " is anagram of "+f+" is "+isAnagram(e,f));// true            
+            String g = "ball"; // initializing first string
+            String h = "call"; // initializing second string
+            System.out.println("The statement "+ g + " is anagram of "+h+"is "+isAnagram(g,h));// Print false                       
         }		    
 }
-
