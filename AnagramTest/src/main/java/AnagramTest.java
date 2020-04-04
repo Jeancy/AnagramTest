@@ -22,18 +22,20 @@ public class AnagramTest {
 		}
 		// Both char arrays have the same number of characters
 		for(int i = 0; i < leftArray.length; i++){
-            if(leftArray[i] != rightArray[i]){
-                return false;  
-            }
+		    if(leftArray[i] != rightArray[i]){
+			return false;  
+		    }
 		}
 		// We only get to this stage if all the elements pass the if test
+		// which means leftArra[i] == rightArray[i] pour tout i.
 		return true;
 	}
 				    
 	public static void main(String [] args)	{
+            // Test case		
             String a = "integral"; // initializing first string
             String b = "Triangle"; // initializing second string
-            System.out.println(isAnagram(a,b));		
-		}		    
+            System.out.println(isAnagram(a,b));	// will print true	
+       }		    
 }
 
