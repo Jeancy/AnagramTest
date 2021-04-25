@@ -4,6 +4,8 @@ package com.mycompany.anagramtest;
 // Importing the Arrays class that will help us manipulate arrays.
 import java.util.Arrays;
 
+// An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+// For example, the word anagram itself can be rearranged into nag a ram, also the word binary into brainy and the word adobe into abode.
 public class AnagramTest {
     /** 
     *@param str1 str2
@@ -16,9 +18,9 @@ public class AnagramTest {
             // sorting method in java.
             char [] leftArray = ( str1.trim().toLowerCase()).toCharArray();
             char [] rightArray = ( str2.trim().toLowerCase()).toCharArray();
-            Arrays.parallelSort(leftArray); // Sorting the first array
-            Arrays.parallelSort(rightArray); // Sorting the second array
-            return Arrays.equals(leftArray, leftArray);
+            Arrays.parallelSort(leftArray); // Sorting the first array or left array
+            Arrays.parallelSort(rightArray); // Sorting the second array or right array
+            return Arrays.equals(leftArray, rightArray); // The equals method of the Arrays class checks if 2 arrays have the same elements in the same order
         }			    
 	public static void main(String [] args){
             //Test cases;
